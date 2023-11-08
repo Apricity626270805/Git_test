@@ -278,8 +278,7 @@ void LED_Ctrl_Task(void const *argument)
   for (;;)
   {
     HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_5);
-    vTaskDelay(pdMS_TO_TICKS(500));
-    osDelay(1);
+    osDelay(1000);
   }
   /* USER CODE END LED_Ctrl_Task */
 }
